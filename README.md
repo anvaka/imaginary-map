@@ -8,7 +8,7 @@ as they provide more details with panning and zooming.
 
 ## Imagine Futuristic Architecture of `X`
 
-[![preview](https://anvaka.github.io/imaginary-map/architecture/preview.png)](https://anvaka.github.io/imaginary-map/architecture/)
+[![preview](https://anvaka.github.io/imaginary-map/images-small/architecture/preview.png)](https://anvaka.github.io/imaginary-map/architecture/)
 
 [link](https://anvaka.github.io/imaginary-map/architecture/)
 
