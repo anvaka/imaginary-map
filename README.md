@@ -44,6 +44,7 @@ or contact me on Twitter at  https://twitter.com/anvaka
 ## Community discussion
 
 * [Imaginary faces](https://www.reddit.com/r/MapPorn/comments/14ynj3s/asked_midjourney_to_imagine_the_most/)
+* [Futuristic architecture](https://www.reddit.com/r/MapPorn/comments/162wf6s/midjourney_imagines_futuristic_architecture_of/) - almost no discussion here
 
 
 Please follow the comments trail to see what people think about it.
