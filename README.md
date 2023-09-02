@@ -12,6 +12,8 @@ as they provide more details with panning and zooming.
 
 [link](https://anvaka.github.io/imaginary-map/architecture/)
 
+You can see them as a list too: https://anvaka.github.io/imaginary-map/architecture/List.html
+
 ## Imagine most stereotypical person in `X`
 
 [![preview](https://anvaka.github.io/imaginary-faces/preview.png)](https://anvaka.github.io/imaginary-faces/)
