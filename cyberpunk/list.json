@@ -1,0 +1,220 @@
+[
+  {"country": "Afghanistan", "figure": "Ahmad Shah Durrani"},
+  {"country": "Angola", "figure": "Agostinho Neto"},
+  {"country": "Albania", "figure": "Skanderbeg"},
+  {"country": "United Arab Emirates", "figure": "Sheikh Zayed bin Sultan Al Nahyan"},
+  {"country": "Argentina", "figure": "Che Guevara"},
+  {"country": "Armenia", "figure": "Armenak Shahmuradyan"},
+  {"country": "Antarctica", "figure": "Ernest Shackleton"},
+  {"country": "French Southern and Antarctic Lands", "figure": "Jules Dumont d'Urville"},
+  {"country": "Australia", "figure": "Ned Kelly"},
+  {"country": "Austria", "figure": "Wolfgang Amadeus Mozart"},
+  {"country": "Azerbaijan", "figure": "Heydar Aliyev"},
+  {"country": "Burundi", "figure": "Louis Rwagasore"},
+  {"country": "Belgium", "figure": "Leopold II"},
+  {"country": "Benin", "figure": "Behanzin"},
+  {"country": "Burkina Faso", "figure": "Thomas Sankara"},
+  {"country": "Bangladesh", "figure": "Sheikh Mujibur Rahman"},
+  {"country": "Bulgaria", "figure": "Vasil Levski"},
+  {"country": "The Bahamas", "figure": "Sir Lynden Pindling"},
+  {"country": "Bosnia and Herzegovina", "figure": "Alija Izetbegović"},
+  {"country": "Belarus", "figure": "Alexander Lukashenko"},
+  {"country": "Belize", "figure": "George Cadle Price"},
+  {"country": "Bolivia", "figure": "Evo Morales"},
+  {"country": "Brazil", "figure": "Getúlio Vargas"},
+  {"country": "Brunei", "figure": "Hassanal Bolkiah"},
+  {"country": "Bhutan", "figure": "Jigme Singye Wangchuck"},
+  {"country": "Botswana", "figure": "Seretse Khama"},
+  {"country": "Central African Republic", "figure": "Jean-Bédel Bokassa"},
+  {"country": "Canada", "figure": "Pierre Trudeau"},
+  {"country": "Switzerland", "figure": "William Tell"},
+  {"country": "Chile", "figure": "Salvador Allende"},
+  {"country": "China", "figure": "Mao Zedong"},
+  {"country": "Ivory Coast", "figure": "Félix Houphouët-Boigny"},
+  {"country": "Cameroon", "figure": "Ahmadou Ahidjo"},
+  {"country": "Democratic Republic of the Congo", "figure": "Patrice Lumumba"},
+  {"country": "Republic of Congo", "figure": "Denis Sassou Nguesso"},
+  {"country": "Colombia", "figure": "Simón Bolívar"},
+  {"country": "Costa Rica", "figure": "José Figueres Ferrer"},
+  {"country": "Cuba", "figure": "Fidel Castro"},
+  {"country": "Northern Cyprus", "figure": "Rauf Denktaş"},
+  {"country": "Cyprus", "figure": "Makarios III"},
+  {"country": "Czech Republic", "figure": "Václav Havel"},
+  {"country": "Germany", "figure": "Albert Einstein"},
+  {"country": "Djibouti", "figure": "Hassan Gouled Aptidon"},
+  {"country": "Denmark", "figure": "King Christian IV"},
+  {"country": "Dominican Republic", "figure": "Juan Bosch"},
+  {"country": "Algeria", "figure": "Houari Boumédiène"},
+  {"country": "Ecuador", "figure": "Eloy Alfaro"},
+  {"country": "Egypt", "figure": "Ramses II"},
+  {"country": "Eritrea", "figure": "Isaias Afwerki"},
+  {"country": "Spain", "figure": "Ferdinand and Isabella"},
+  {"country": "Estonia", "figure": "Lennart Meri"},
+  {"country": "Ethiopia", "figure": "Haile Selassie"},
+  {"country": "Finland", "figure": "Carl Gustaf Emil Mannerheim"},
+  {"country": "Fiji", "figure": "Sitiveni Rabuka"},
+  {"country": "Falkland Islands", "figure": "Richard Moody"},
+  {"country": "France", "figure": "Napoleon Bonaparte"},
+  {"country": "Gabon", "figure": "Omar Bongo"},
+  {"country": "United Kingdom", "figure": "Winston Churchill"},
+  {"country": "Georgia", "figure": "Joseph Stalin"},
+  {"country": "Ghana", "figure": "Kwame Nkrumah"},
+  {"country": "Guinea", "figure": "Ahmed Sékou Touré"},
+  {"country": "Gambia", "figure": "Dawda Jawara"},
+  {"country": "Guinea Bissau", "figure": "Amílcar Cabral"},
+  {"country": "Equatorial Guinea", "figure": "Teodoro Obiang Nguema Mbasogo"},
+  {"country": "Greece", "figure": "Alexander the Great"},
+  {"country": "Greenland", "figure": "Knud Rasmussen"},
+  {"country": "Guatemala", "figure": "Miguel Ángel Asturias"},
+  {"country": "Guyana", "figure": "Cheddi Jagan"},
+  {"country": "Honduras", "figure": "José Francisco Morazán Quezada"},
+  {"country": "Croatia", "figure": "Franjo Tuđman"},
+  {"country": "Haiti", "figure": "Toussaint Louverture"},
+  {"country": "Hungary", "figure": "Lajos Kossuth"},
+  {"country": "Indonesia", "figure": "Sukarno"},
+  {"country": "India", "figure": "Mahatma Gandhi"},
+  {"country": "Ireland", "figure": "Michael Collins"},
+  {"country": "Iran", "figure": "Cyrus the Great"},
+  {"country": "Iraq", "figure": "Hammurabi"},
+  {"country": "Iceland", "figure": "Leif Erikson"},
+  {"country": "Israel", "figure": "David Ben-Gurion"},
+  {"country": "Italy", "figure": "Julius Caesar"},
+  {"country": "Jamaica", "figure": "Bob Marley"},
+  {"country": "Jordan", "figure": "King Hussein"},
+  {"country": "Japan", "figure": "Emperor Meiji"},
+  {"country": "Kazakhstan", "figure": "Nursultan Nazarbayev"},
+  {"country": "Kenya", "figure": "Jomo Kenyatta"},
+  {"country": "Kyrgyzstan", "figure": "Manas"},
+  {"country": "Cambodia", "figure": "Norodom Sihanouk"},
+  {"country": "South Korea", "figure": "Syngman Rhee"},
+  {"country": "Kosovo", "figure": "Ibrahim Rugova"},
+  {"country": "Kuwait", "figure": "Jaber Al-Ahmad Al-Sabah"},
+  {"country": "Laos", "figure": "Kaysone Phomvihane"},
+  {"country": "Lebanon", "figure": "Rafic Hariri"},
+  {"country": "Liberia", "figure": "William Tubman"},
+  {"country": "Libya", "figure": "Muammar Gaddafi"},
+  {"country": "Sri Lanka", "figure": "D. S. Senanayake"},
+  {"country": "Lesotho", "figure": "Moshoeshoe I"},
+  {"country": "Lithuania", "figure": "Vytautas the Great"},
+  {"country": "Luxembourg", "figure": "Grand Duchess Charlotte"},
+  {"country": "Latvia", "figure": "Kārlis Ulmanis"},
+  {"country": "Morocco", "figure": "Hassan II"},
+  {"country": "Moldova", "figure": "Stephen the Great"},
+  {"country": "Madagascar", "figure": "Ranavalona I"},
+  {"country": "Mexico", "figure": "Emiliano Zapata"},
+  {"country": "Macedonia", "figure": "Mother Teresa"},
+  {"country": "Mali", "figure": "Mansa Musa"},
+  {"country": "Myanmar", "figure": "Aung San"},
+  {"country": "Montenegro", "figure": "Petar II Petrović-Njegoš"},
+  {"country": "Mongolia", "figure": "Genghis Khan"},
+  {"country": "Mozambique", "figure": "Samora Machel"},
+  {"country": "Mauritania", "figure": "Moktar Ould Daddah"},
+  {"country": "Malawi", "figure": "Hastings Banda"},
+  {"country": "Malaysia", "figure": "Tunku Abdul Rahman"},
+  {"country": "Namibia", "figure": "Sam Nujoma"},
+  {"country": "New Caledonia", "figure": "Jean-Marie Tjibaou"},
+  {"country": "Niger", "figure": "Hamani Diori"},
+  {"country": "Nigeria", "figure": "Chinua Achebe"},
+  {"country": "Nicaragua", "figure": "Augusto Sandino"},
+  {"country": "Netherlands", "figure": "William of Orange"},
+  {"country": "Norway", "figure": "King Harald V"},
+  {"country": "Nepal", "figure": "Prithvi Narayan Shah"},
+  {"country": "New Zealand", "figure": "Sir Edmund Hillary"},
+  {"country": "Oman", "figure": "Sultan Qaboos"},
+  {"country": "Pakistan", "figure": "Muhammad Ali Jinnah"},
+  {"country": "Panama", "figure": "Omar Torrijos"},
+  {"country": "Peru", "figure": "Simón Bolívar"},
+  {"country": "Philippines", "figure": "José Rizal"},
+  {"country": "Papua New Guinea", "figure": "Michael Somare"},
+  {"country": "Poland", "figure": "Lech Wałęsa"},
+  {"country": "Puerto Rico", "figure": "Roberto Clemente"},
+  {"country": "North Korea", "figure": "Kim Il-sung"},
+  {"country": "Portugal", "figure": "Henry the Navigator"},
+  {"country": "Paraguay", "figure": "Francisco Solano López"},
+  {"country": "Palestine", "figure": "Yasser Arafat"},
+  {"country": "Qatar", "figure": "Sheikh Tamim bin Hamad Al Thani"},
+  {"country": "Romania", "figure": "Vlad the Impaler"},
+  {"country": "Russia", "figure": "Peter the Great"},
+  {"country": "Rwanda", "figure": "Paul Kagame"},
+  {"country": "Western Sahara", "figure": "El-Ouali Mustapha Sayed"},
+  {"country": "Saudi Arabia", "figure": "Ibn Saud"},
+  {"country": "Sudan", "figure": "Gaafar Nimeiry"},
+  {"country": "South Sudan", "figure": "John Garang"},
+  {"country": "Senegal", "figure": "Léopold Sédar Senghor"},
+  {"country": "Solomon Islands", "figure": "Solomon Mamaloni"},
+  {"country": "Sierra Leone", "figure": "Siaka Stevens"},
+  {"country": "El Salvador", "figure": "Óscar Romero"},
+  {"country": "Somaliland", "figure": "Mohamed Haji Ibrahim Egal"},
+  {"country": "Somalia", "figure": "Siad Barre"},
+  {"country": "Republic of Serbia", "figure": "Slobodan Milošević"},
+  {"country": "Suriname", "figure": "Dési Bouterse"},
+  {"country": "Slovakia", "figure": "Andrej Hlinka"},
+  {"country": "Slovenia", "figure": "Janez Drnovšek"},
+  {"country": "Sweden", "figure": "Gustav II Adolph"},
+  {"country": "Swaziland", "figure": "Mswati III"},
+  {"country": "Syria", "figure": "Hafez al-Assad"},
+  {"country": "Chad", "figure": "Hissène Habré"},
+  {"country": "Togo", "figure": "Gnassingbé Eyadéma"},
+  {"country": "Thailand", "figure": "King Bhumibol Adulyadej"},
+  {"country": "Tajikistan", "figure": "Ismoil Somoni"},
+  {"country": "Turkmenistan", "figure": "Saparmurat Niyazov"},
+  {"country": "East Timor", "figure": "Xanana Gusmão"},
+  {"country": "Trinidad and Tobago", "figure": "Eric Williams"},
+  {"country": "Tunisia", "figure": "Habib Bourguiba"},
+  {"country": "Turkey", "figure": "Mustafa Kemal Atatürk"},
+  {"country": "Taiwan", "figure": "Chiang Kai-shek"},
+  {"country": "United Republic of Tanzania", "figure": "Julius Nyerere"},
+  {"country": "Uganda", "figure": "Idi Amin"},
+  {"country": "Ukraine", "figure": "Taras Shevchenko"},
+  {"country": "Uruguay", "figure": "José Artigas"},
+  {"country": "United States of America", "figure": "George Washington"},
+  {"country": "Uzbekistan", "figure": "Tamerlane"},
+  {"country": "Venezuela", "figure": "Simón Bolívar"},
+  {"country": "Vietnam", "figure": "Hồ Chí Minh"},
+  {"country": "Vanuatu", "figure": "Father Walter Lini"},
+  {"country": "Yemen", "figure": "Ali Abdullah Saleh"},
+  {"country": "South Africa", "figure": "Nelson Mandela"},
+  {"country": "Zambia", "figure": "Kenneth Kaunda"},
+  {"country": "Zimbabwe", "figure": "Robert Mugabe"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
