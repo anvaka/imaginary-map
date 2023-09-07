@@ -158,6 +158,11 @@
     </div>
   </div>
 
+  <script>
+  window.mapCountryToPrompt = function (country) {
+    return `/imagine prompt:"Futuristic architecture of <b>${country}</b>"`;
+  }
+  </script>
   
   <script type="module" src="../index.js?kind=architecture"></script>
 </body>

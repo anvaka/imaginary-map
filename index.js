@@ -197,13 +197,14 @@ function mercator(lon, lat) {
 
 function renderSideBar(countryName) {
   if (!countryName) return;
+  let prompt = window.mapCountryToPrompt(countryName)
   let content = `
     <h3 class='query-title'>Query sent to <a href="https://www.midjourney.com/">Midjourney</a>
     <a href='#' class='close'>[x]</a>
     </h3>
-    <code>/imagine prompt:"Futuristic architecture of <b>${countryName}</b>"</code>
+    <code>${prompt}</code>
     <div style="width:100%; position: relative;" class="imgContainer">
-      <img src="${getImageUrl(countryName)}" alt="Futuristic architecture of ${countryName}" />
+      <img src="${getImageUrl(countryName)}" alt="${countryName}" />
       <div class="quadrant-border"></div>
     </div>
     <a href="${getImageUrl(countryName)}" target="_blank" class="result-open">Open image in new tab</a>

@@ -7,6 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 .DS_Store
+workIds.json
 
 images-small/*/original/*
 # Diagnostic reports (https://nodejs.org/api/report.html)
