@@ -6,6 +6,10 @@ imagine something bound to geography and then visualize the results on a map.
 Images below are preview of the results, but please do explore interactive versions
 as they provide more details with panning and zooming.
 
+## Imagine historical figure in cyberpunk settings
+
+[link](https://anvaka.github.io/imaginary-map/cyberpunk/)
+
 ## Imagine Futuristic Architecture of `X`
 
 [![preview](https://anvaka.github.io/imaginary-map/images-small/architecture/preview.png)](https://anvaka.github.io/imaginary-map/architecture/)
