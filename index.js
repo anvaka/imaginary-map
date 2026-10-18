@@ -1,4 +1,7 @@
 import { createClipQueue } from './clipQueue.js';
+// Where the face is in each image of a map of people, so it can be placed on
+// land; images without one cover their country
+import faceBoxes from './faceBoxes.json';
 
 // Images are decoded, clipped and encoded in workers so the main thread stays responsive
 const WORKER_COUNT = Math.max(1, Math.min(6, (navigator.hardwareConcurrency || 4) - 1));
@@ -165,11 +168,14 @@ function swapIn(info, keys, size) {
 async function loadImage(info, size, priority) {
   const generation = info.generation;
   const { quadrant } = info;
-  const { url, crop } = quadrantImage(info.country, quadrant, size);
+  const { url, crop, region } = quadrantImage(info.country, quadrant, size);
+  // Face boxes are fractions of the full image; the worker wants them in the fetched file's
+  const faces = (faceBoxes[imagePath(info.country)] || []).map(([x, y, w, h]) =>
+    [(x - region.x) / region.width, (y - region.y) / region.height, w / region.width, h / region.height]);
   let results;
   try {
     // Keyed by country, so this cancels any earlier request for it that hasn't finished
-    results = await clipQueue.clip(info.country, { url, crop, rings: info.rings }, priority);
+    results = await clipQueue.clip(info.country, { url, crop, rings: info.rings, faces }, priority);
   } catch (err) {
     console.error(`Failed to load ${info.country}`, err);
     results = [];
@@ -325,18 +331,24 @@ function renderSideBar(countryName) {
 }
 
 function getImageUrl(adminName) {
-  return ROOT + 'images-small/' + kind + '/' + fileName(adminName) + '.webp';
+  return ROOT + imagePath(adminName);
 }
 
-// One of the four candidates at the given size: the URL of a file and the part
-// of it to clip. Smaller sizes have a file per quadrant; the original size is
-// cut from the grid.
+// The full image's path from the site root, as faceBoxes.json names it
+function imagePath(adminName) {
+  return 'images-small/' + kind + '/' + fileName(adminName) + '.webp';
+}
+
+// One of the four candidates at the given size: the URL of a file, the part of
+// it to clip (crop), and the part of the full image that file holds (region).
+// Smaller sizes have a file per quadrant; the original size is cut from the grid.
 function quadrantImage(adminName, quadrant, size) {
+  const quadrantCrop = { x: (quadrant % 2) / 2, y: Math.floor(quadrant / 2) / 2, width: 0.5, height: 0.5 };
   if (size < IMAGE_SIZES[IMAGE_SIZES.length - 1]) {
-    return { url: `${ROOT}images-small/${kind}/${size}/${fileName(adminName)}-${quadrant}.webp`, crop: FULL_IMAGE };
+    const url = `${ROOT}images-small/${kind}/${size}/${fileName(adminName)}-${quadrant}.webp`;
+    return { url, crop: FULL_IMAGE, region: quadrantCrop };
   }
-  const crop = { x: (quadrant % 2) / 2, y: Math.floor(quadrant / 2) / 2, width: 0.5, height: 0.5 };
-  return { url: getImageUrl(adminName), crop };
+  return { url: getImageUrl(adminName), crop: quadrantCrop, region: FULL_IMAGE };
 }
 
 function fileName(adminName) {
