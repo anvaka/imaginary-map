@@ -86,6 +86,7 @@
     }
     .list .imgContainer img {
       max-width: 800px;
+      height: auto;
     }
     code {
       background-color: var(--code-background-color);
@@ -117,6 +118,9 @@
   <div class="list"></div>
 
   
-  <script type="module" src="../list.js?kind=architecture"></script>
+  <script type="module">
+    import { showList } from '../list.js';
+    showList('architecture');
+  </script>
 </body>
 </html>
