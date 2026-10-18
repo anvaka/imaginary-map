@@ -1,13 +1,14 @@
 const query = 'Futuristic architecture of <X>';
-const output = 'images-small/architecture/';
+const output = 'public/images-small/architecture/';
 
 const readline = require('readline');
 const fs = require('fs');
 const path = require('path');
-const originalImages = path.join(output, 'original');
+// Kept out of public/, so the full-size originals aren't published
+const originalImages = 'images-small/architecture/original';
 let lastProcessed = 0;
 
-const borders = JSON.parse(fs.readFileSync('./ne_110m_admin_0_countries.geojson', 'utf8'));
+const borders = JSON.parse(fs.readFileSync('./public/ne_110m_admin_0_countries.geojson', 'utf8'));
 
 const missing = [];
 for (let countryPolygon of borders.features) {

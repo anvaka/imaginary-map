@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+# Production deploy. On every push to main, build and publish ./dist to the
+# ROOT of the gh-pages branch (which GitHub Pages serves). Per-PR previews live
+# under pr-preview/ in the same branch (see preview.yml); clean-exclude keeps
+# this production deploy from wiping them, and force:false appends instead of
+# rewriting history so the two workflows don't clobber each other.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24  # keep in sync with preview.yml
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Publish to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
+          clean: true
+          clean-exclude: pr-preview/
+          force: false

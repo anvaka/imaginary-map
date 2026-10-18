@@ -1,14 +1,16 @@
-import getImage from "./imageLayer.js";
+// Every page is a folder under the site root, which has the images and the borders
+const ROOT = '../';
+// The folder of images the page shows, e.g. architecture
+let kind = null;
 
-const scriptAddress = import.meta.url;
-const baseAddress = scriptAddress.substring(0, scriptAddress.lastIndexOf('/')) + '/';
-const kind = new URL(import.meta.url).searchParams.get('kind') || 'architecture';
-
-loadBorders().then(renderList);
+export function showList(imageKind) {
+  kind = imageKind;
+  loadBorders().then(renderList);
+}
 
 function loadBorders() {
   const bounds = 'ne_110m_admin_0_countries.geojson';
-  return fetch(baseAddress + bounds).then(res => res.json());
+  return fetch(ROOT + bounds).then(res => res.json());
 }
 
 function renderList(borders) {
@@ -23,11 +25,12 @@ function renderList(borders) {
 
 function getCountryDiv(countryName) {
   if (!countryName) return;
+  // Lazy, so only the images near the screen download, not all of them at once
   let content = `
     <h2 class='query-title'>${countryName}</h2>
     <div class="imgContainer">
       <a href="${getImageUrl(countryName)}" target="_blank" class="result-open">
-        <img src="${getImageUrl(countryName)}" alt="Futuristic architecture of ${countryName}" />
+        <img src="${getImageUrl(countryName)}" width="2048" height="2048" loading="lazy" alt="Futuristic architecture of ${countryName}" />
       </a>
     </div>
     <code>/imagine prompt:"Futuristic architecture of <b>${countryName}</b>"</code>
@@ -41,5 +44,5 @@ function getCountryDiv(countryName) {
 }
 
 function getImageUrl(adminName) {
-  return baseAddress + 'images-small/' + kind + '/' + adminName.replace(/ /g, '_') + '.webp';
+  return ROOT + 'images-small/' + kind + '/' + adminName.replace(/ /g, '_') + '.webp';
 }

@@ -343,6 +343,9 @@ window.mapCountryToPrompt = function (country) {
 }
 
   </script>
-  <script type="module" src="../index.js?kind=cyberpunk"></script>
+  <script type="module">
+    import { showMap } from '../index.js';
+    showMap('cyberpunk');
+  </script>
 </body>
 </html>
