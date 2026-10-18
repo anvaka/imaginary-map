@@ -39,7 +39,24 @@ The resulting high-definition images amounted to 900MB of disk space, which were
 
 The map is rendered using [maplibre](https://maplibre.org/) and [natural earth](https://www.naturalearthdata.com/) data.
 
-Each image is loaded separately into the browser and then cropped to fit the shape of the respective country. As a result, initial loading times may be slightly prolonged, but navigation becomes significantly quicker once all countries are loaded.
+Each image is clipped to its country's shape in the browser, in web workers.
+Images load small first, 256 pixels wide, then sharper (512 and 1024) for the
+countries you zoom into. The countries on screen load first, the biggest of them
+first.
+
+## Running it locally
+
+```sh
+npm install
+npm run dev     # http://localhost:5174/architecture/ and /cyberpunk/
+npm run build   # static site in dist/
+```
+
+The images are in `public/images-small/<map>/`. After adding or replacing one,
+write its smaller sizes with `python3 scripts/make-sizes.py <map>`.
+
+Every push to `main` deploys to GitHub Pages. Every pull request gets a preview at
+`https://anvaka.github.io/imaginary-map/pr-preview/pr-<number>/`.
 
 ## Feedback
 

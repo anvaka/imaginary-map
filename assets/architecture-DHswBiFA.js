@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./imaginary-map--kvxHiIh.js";e(`architecture`);
