@@ -80,8 +80,8 @@ export function createClipQueue(workerCount) {
       const job = jobs.get(key);
       if (job) job.priority = priority;
     },
-    // request: { url, crop, rings }, as clipWorker.js takes it, with the image's
-    // URL in place of the image
+    // request: { url, crop, rings, faces }, as clipWorker.js takes it, with the
+    // image's URL in place of the image
     clip(key, request, priority = 0) {
       cancel(key);
       return new Promise((resolve, reject) => {

@@ -39,7 +39,12 @@ The resulting high-definition images amounted to 900MB of disk space, which were
 
 The map is rendered using [maplibre](https://maplibre.org/) and [natural earth](https://www.naturalearthdata.com/) data.
 
-Each image is clipped to its country's shape in the browser, in web workers.
+Each image is clipped to its country's shape in the browser, in web workers. The
+image keeps its proportions. On the cyberpunk map, the face goes on the point of
+the country farthest from the border, at a size that shows most of it; the faces
+were found offline (see [scripts/face-detection](scripts/face-detection/README.md)).
+Images without a face cover their country, centered on that point.
+
 Images load small first, 256 pixels wide, then sharper (512 and 1024) for the
 countries you zoom into. The countries on screen load first, the biggest of them
 first.
